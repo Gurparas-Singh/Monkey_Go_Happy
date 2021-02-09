@@ -33,7 +33,8 @@ function setup(){
 
 function draw(){
   background(0);
-  
+  monkey.velocityY = monkey.velocityY +0.8;
+     
   re = createSprite(300,150,5,5);
   re.addImage("restart",reImg);
   re.scale = 0.1;
@@ -49,8 +50,6 @@ function draw(){
   monkey.collide(invisibleGround);
   if(gamestate === "PLAY"){
      wallpaper.velocityX = -4;
-  
-    monkey.velocityY = monkey.velocityY +0.8;
 
   condition();
   }
