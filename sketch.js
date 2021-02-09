@@ -74,7 +74,7 @@ function draw(){
 
 function condition (){
   
- if(keyDown("space") && monkey.y > 250 ){
+ if(keyDown("space") && monkey.y > 262 ){
     monkey.velocityY = -15;
   }
 if(World.frameCount %90 == 0){
